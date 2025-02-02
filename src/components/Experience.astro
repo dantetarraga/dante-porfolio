@@ -1,0 +1,36 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+  {
+    date: "Enero 2025 - Actualidad",
+    title: "Desarrollador Backend PL/SQL",
+    company: "Disnovo",
+    description:
+      "Contrato por mano de obra. Responsable de diseñar, implementar y optimizar soluciones en PL/SQL para el procesamiento eficiente de datos.",
+  },
+  {
+    date: "Agosto 2024 - Enero 2025",
+    title: "Desarrollador Frontend Junior",
+    company: "Geor",
+    description:
+      "Participé activamente en numerosos proyectos utilizando tecnologías como Vue 2, Angular con Ionic y Nuxt. Mis actividades se centraron en mejorar la interfaz siguiendo diseños establecidos e integrar servicios web para lograr una comunicación fluida y una experiencia de usuario óptima.",
+  },
+  {
+    date: "Mayo 2024 - Agosto 2024",
+    title: "Desarrollador Frontend Junior",
+    company: "Devdatep Consulting",
+    description:
+      "Desarrollo y mantenimiento de componentes en React, implementación de diseños responsivos con Tailwind CSS y integración de APIs. Participación en la optimización de interfaces y experiencia del usuario",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
